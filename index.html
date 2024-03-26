@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pomodoro Technique</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <div class="container">
+        <div class="check-list">
+        <h2>Check list <img src="img/check.png"></h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+        </ul>
+    </div>
+        <div class="pomo">
+            <h2>Pomodoro Timer <img src="img/timer.png"></h2>
+            <div id="disp">Let's Go!</div>
+            <form action="#">
+                <input type="number" id="minute" placeholder="Minutes" autocomplete="off" value="">
+                <input type="number" id="second" placeholder="Seconds" autocomplete="off" value="">
+            </form>
+
+            <div class="btn">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+          </div>
+    </div>
+    </body>
+    </body>
+    <script src="script.js"></script>
+</body>
+</html>

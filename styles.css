@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(110deg,#0a0274,#8d1192);
+    padding: 10px;
+}
+.check-list{
+    width:100%;
+    height: auto;
+    max-width:540px;
+    background: #0e0101;
+    margin:100px 20px 20px 40px;  
+    /* change this for positional changes */
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.check-list h2{
+    color:#e8ebef;
+    display:flex;
+    align-items:center;
+    margin: bottom 40px;
+    padding-bottom: 40px;
+}
+.check-list h2 img{
+    width:40px;
+    margin-left:10px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#fcfdff;
+    border-radius:30px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding:10px;
+    font-weight: 14px;
+}
+button{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:#9c0ba9;
+    color:#fff;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius:40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    color: #edeef0;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position:absolute;
+    height: 28px;
+    width:28px;
+    border-radius:50%;
+    background-image:url(img/empty.png) ;
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+
+ul li.checked{
+    color:#ebe5e5;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(img/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50%;
+}
+
+ul li span:hover{
+    background:#edeef0;
+}
+
+.pomo{
+    width:100%;
+    height: auto;
+    max-width:540px;
+    background: #0e0101;
+    margin:100px 10px 20px 650px;  
+    /* change this for positional changes */
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.pomo h2{
+    /* color:#e8ebef;
+    display:flex;
+    align-items:center;
+    margin: bottom 40px;
+    padding: 0px 20px 20px 100px;
+    width: max-content;
+    padding-left: 140px; */
+    color:#e8ebef;
+    display:flex;
+    align-items:center;
+    margin: bottom 40px;
+    padding-bottom: 40px;
+}
+
+.pomo h2 img{
+    width:40px;
+    margin-left:10px;
+}
+
+.pomo form{
+    height:100px;
+    width:100%;
+    background-color: #fcfdff;
+    line-height:18vh;
+    text-align: center;
+    /* padding-left: 60px; */
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.pomo form input{
+    width: 100px;
+    border:none;
+    outline:none;
+    border-bottom: 3px solid #9c0ba9;
+    color: #9c0ba9;
+    background-color: transparent;
+    font-size:30px;
+    text-align: center;
+}
+
+.pomo form input::placeholder{
+    font-size:20px;
+    color:#8d1192;
+    font-size:700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+
+.pomo .btn{
+    height:15vh;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pomo .btn button{
+    padding:5px 20px;
+    font-size:25px;
+    background-color: #9c0ba9;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.pomo #disp{
+    height:25px;
+    widht:100%;
+    color:#fff;
+    text-align:center;
+    font-size: 25px;
+    line-height: 2px;
+}
